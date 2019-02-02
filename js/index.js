@@ -38,4 +38,18 @@ container.addEventListener('wheel', (e) => {
 
 //click to cycle through top header image
 const topImage = document.querySelector('.intro img');
-topImage.classList.add('transition');a
+let count = 0;
+let imgArray = [
+    'http://capecodonline.com/wp-content/uploads/2018/04/BayView-Beach.gif',
+    'http://capecodonline.com/wp-content/uploads/2018/04/Skaket-Beach.gif',
+    'https://www.visitnorthnorfolk.com/img/cms/Sheringham-Beach-1000x300.jpg',
+    'img/fun-bus.jpg'
+]
+
+topImage.addEventListener('click', (e) => {
+    if(count > 3){
+        count = 0;
+    }
+    topImage.setAttribute('src', imgArray[count])
+    count++
+} )
