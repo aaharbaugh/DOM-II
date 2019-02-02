@@ -38,4 +38,4 @@ container.addEventListener('wheel', (e) => {
 
 //click to cycle through top header image
 const topImage = document.querySelector('.intro img');
-topImage.classList.add('transition');
+topImage.classList.add('transition');a
